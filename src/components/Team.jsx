@@ -15,7 +15,7 @@ export default function Team() {
       description: "Leads software architecture, backend development, cloud infrastructure, and technical innovation."
     },
     {
-      name: "Kesamsety Vaishnavi",
+      name: "Kesamsetty Vaishnavi",
       role: "Software Tester",
       description: "Ensures software quality through testing, bug tracking, performance testing, and quality assurance."
     }
