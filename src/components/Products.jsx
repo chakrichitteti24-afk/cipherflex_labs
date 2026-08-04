@@ -13,10 +13,10 @@ export default function Products() {
       gradient: "from-brand-blue/10 to-transparent"
     },
     {
-      name: "HerSync AI",
+      name: "Svanexa AI",
       description: "An AI-powered women's health companion for cycle tracking, wellness insights, and personalized health guidance.",
       status: "Live",
-      link: "https://hersync-ai.vercel.app",
+      link: "https://svanexa-ai.vercel.app",
       icon: <Activity size={32} className="text-brand-blue" />,
       features: ["Cycle Tracking", "AI Companion", "Wellness Insights", "Health Analytics"],
       gradient: "from-brand-blue/10 to-transparent"
