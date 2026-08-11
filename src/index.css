@@ -3,19 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  
   body {
-    @apply bg-[#030712] text-gray-200 antialiased overflow-x-hidden;
-    font-family: 'Inter', 'Poppins', sans-serif;
+    @apply bg-[#030712] text-gray-200 antialiased overflow-x-hidden selection:bg-brand-blue/30 selection:text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply text-white;
+    @apply text-white font-bold tracking-tight;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-[#030712]/70 backdrop-blur-md border-b border-white/5;
+    @apply bg-[#030712]/80 backdrop-blur-lg border-b border-white/5;
   }
   
   .glass-card {
@@ -23,7 +28,7 @@
   }
   
   .glass-card:hover {
-    @apply border-brand-blue/30 bg-white/[0.04] shadow-[0_0_30px_rgba(37,99,235,0.05)];
+    @apply border-brand-blue/35 bg-white/[0.04] shadow-[0_0_25px_rgba(37,99,235,0.08)];
   }
   
   .text-gradient {
@@ -35,9 +40,18 @@
   }
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Accessibility: Support prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Custom scrollbar */
@@ -54,3 +68,4 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #2563EB;
 }
+

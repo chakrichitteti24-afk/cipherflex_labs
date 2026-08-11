@@ -1,0 +1,5 @@
+# CipherFlux Labs Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://cipherfluxlabs.com/sitemap.xml

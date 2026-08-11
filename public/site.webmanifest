@@ -1,0 +1,17 @@
+{
+  "name": "CipherFlux Labs | AI & Software Solutions",
+  "short_name": "CipherFlux",
+  "description": "CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

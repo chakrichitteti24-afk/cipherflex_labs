@@ -15,10 +15,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fast, minimal loading screen
+    // Ultra-fast loader for optimal Lighthouse FCP/LCP performance
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 400);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,26 +29,27 @@ function App() {
           <motion.div 
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="fixed inset-0 z-[100] bg-[#030712] flex flex-col items-center justify-center"
+            transition={{ duration: 0.25 }}
+            className="fixed inset-0 z-[100] bg-[#030712] flex flex-col items-center justify-center pointer-events-none"
+            aria-hidden="true"
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.25 }}
               className="flex flex-col items-center"
             >
-              <div className="p-3 bg-brand-blue/10 border border-brand-blue/20 rounded-xl text-brand-blue mb-6">
+              <div className="p-3 bg-brand-blue/10 border border-brand-blue/20 rounded-xl text-brand-blue mb-4">
                 <Code2 size={32} />
               </div>
-              <div className="text-xl font-bold tracking-tight text-white mb-8">
+              <span className="text-xl font-bold tracking-tight text-white mb-6">
                 CIPHERFLUX LABS
-              </div>
-              <div className="w-32 h-0.5 bg-white/5 rounded-full overflow-hidden relative">
+              </span>
+              <div className="w-28 h-0.5 bg-white/5 rounded-full overflow-hidden relative">
                 <motion.div 
                   initial={{ x: "-100%" }}
                   animate={{ x: "100%" }}
-                  transition={{ duration: 1, repeat: Infinity, ease: "easeInOut" }}
+                  transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
                   className="absolute inset-0 bg-brand-blue"
                 />
               </div>
@@ -57,9 +58,9 @@ function App() {
         )}
       </AnimatePresence>
 
-      <div className="bg-[#030712] min-h-screen selection:bg-brand-blue/30 selection:text-white">
+      <div className="bg-[#030712] min-h-screen selection:bg-brand-blue/30 selection:text-white overflow-x-hidden">
         <Navbar />
-        <main>
+        <main id="main-content">
           <Hero />
           <About />
           <Products />
@@ -75,3 +76,4 @@ function App() {
 }
 
 export default App;
+
