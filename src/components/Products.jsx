@@ -53,7 +53,7 @@ export default function Products() {
                 </div>
 
                 <p className="text-[#94A3B8] text-base sm:text-lg font-normal leading-relaxed">
-                  "An intelligent AI interview platform that helps users practice, evaluate, and improve their interview performance."
+                  An intelligent AI interview platform that helps users practice, evaluate, and improve their interview performance with real-time feedback.
                 </p>
 
                 {/* Feature Highlights */}
@@ -128,7 +128,7 @@ export default function Products() {
                     <div className="bg-white/[0.02] p-4 rounded-xl border border-white/[0.05]">
                       <div className="text-[11px] text-[#2563EB] font-semibold uppercase tracking-wider mb-1">AI Interviewer Prompt</div>
                       <p className="text-xs text-gray-200 font-light leading-relaxed">
-                        "How do you design a high-throughput microservices architecture to handle 100k concurrent requests per second?"
+                        How do you design a high-throughput microservices architecture to handle 100k concurrent requests per second?
                       </p>
                     </div>
 
@@ -177,8 +177,8 @@ export default function Products() {
                       <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/60" />
                     </div>
-                    <div className="text-[10px] text-gray-400 font-mono px-3 py-1 bg-white/[0.04] rounded-md border border-white/[0.05]">
-                      hersync-ai.vercel.app
+                    <div className="text-[10px] text-gray-400 font-mono px-3 py-1 bg-white/[0.04] rounded-md border border-white/[0.05] truncate max-w-[160px]">
+                      svanexa-ai.vercel.app
                     </div>
                     <span className="text-[10px] text-emerald-400 font-semibold px-2 py-0.5 bg-emerald-500/10 rounded-full border border-emerald-500/20">Live</span>
                   </div>
@@ -248,7 +248,7 @@ export default function Products() {
                 </div>
 
                 <p className="text-[#94A3B8] text-base sm:text-lg font-normal leading-relaxed">
-                  "An AI-powered women's wellness companion designed to help users understand their cycles, track wellness patterns, and receive personalized insights."
+                  An AI-powered women's wellness companion that helps users understand their cycles, track wellness patterns, and receive personalized health insights.
                 </p>
 
                 {/* Feature Highlights */}
