@@ -1,17 +1,29 @@
 {
   "name": "CipherFlux Labs | AI & Software Solutions",
-  "short_name": "CipherFlux",
-  "description": "CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems.",
+  "short_name": "CipherFlux Labs",
+  "description": "CipherFlux Labs is an AI and software technology company building intelligent products including Smith AI and Svanexa AI.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#030712",
   "theme_color": "#030712",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }

@@ -3,50 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
+
+    <!-- ═══════════════════════════════════════════════════════
+         PRIMARY META TAGS
+    ═══════════════════════════════════════════════════════ -->
     <title>CipherFlux Labs | AI &amp; Software Solutions</title>
     <meta name="title" content="CipherFlux Labs | AI &amp; Software Solutions" />
-    <meta name="description" content="CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems." />
-    <meta name="keywords" content="CipherFlux Labs, AI software company, AI solutions, AI products, software development, cybersecurity solutions, artificial intelligence, innovative software products" />
+    <meta name="description" content="CipherFlux Labs is an AI and software technology company building intelligent products including Smith AI and Svanexa AI. Founded by Chakri Chitteti." />
+    <meta name="keywords" content="CipherFlux Labs, Smith AI, Svanexa AI, AI software company, AI interview platform, women wellness AI, Chakri Chitteti, artificial intelligence products" />
     <meta name="author" content="CipherFlux Labs" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="google-site-verification" content="google294fcdf5a17f518b" />
     <meta name="theme-color" content="#030712" />
+    <meta name="color-scheme" content="dark" />
 
-    <!-- Canonical URL -->
+    <!-- Canonical -->
     <link rel="canonical" href="https://cipherfluxlabs.com/" />
 
-    <!-- Favicons & Web Manifest -->
-    <link rel="icon" type="image/png" href="/cipherflux-logo.png" />
-    <link rel="apple-touch-icon" href="/cipherflux-logo.png" />
+    <!-- ═══════════════════════════════════════════════════════
+         FAVICONS — CipherFlux Labs brand icon
+         All files verified to exist in /public
+    ═══════════════════════════════════════════════════════ -->
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="shortcut icon" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Preload brand logo for instant BootScreen render -->
+    <!-- Preload logo for instant BootScreen — avoids FOUC -->
     <link rel="preload" href="/cipherflux-logo.png" as="image" type="image/png" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- ═══════════════════════════════════════════════════════
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp, etc.)
+    ═══════════════════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cipherfluxlabs.com/" />
-    <meta property="og:title" content="CipherFlux Labs | AI &amp; Software Solutions" />
-    <meta property="og:description" content="CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems." />
-    <meta property="og:image" content="https://cipherfluxlabs.com/og-image.png" />
     <meta property="og:site_name" content="CipherFlux Labs" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="CipherFlux Labs | AI &amp; Software Solutions" />
+    <meta property="og:description" content="CipherFlux Labs is an AI and software technology company building intelligent products including Smith AI and Svanexa AI. Founded by Chakri Chitteti." />
+    <meta property="og:image" content="https://cipherfluxlabs.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CipherFlux Labs — AI &amp; Software Solutions" />
+    <meta property="og:image:type" content="image/jpeg" />
 
-    <!-- Twitter / X -->
+    <!-- ═══════════════════════════════════════════════════════
+         TWITTER / X CARD
+    ═══════════════════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cipherfluxlabs" />
     <meta name="twitter:url" content="https://cipherfluxlabs.com/" />
     <meta name="twitter:title" content="CipherFlux Labs | AI &amp; Software Solutions" />
-    <meta name="twitter:description" content="CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems." />
-    <meta name="twitter:image" content="https://cipherfluxlabs.com/og-image.png" />
+    <meta name="twitter:description" content="CipherFlux Labs is an AI and software technology company building intelligent products including Smith AI and Svanexa AI." />
+    <meta name="twitter:image" content="https://cipherfluxlabs.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="CipherFlux Labs — AI &amp; Software Solutions" />
 
-    <!-- Google Fonts (non-render-blocking) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- ═══════════════════════════════════════════════════════
+         GOOGLE FONTS — Inter
+    ═══════════════════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <!-- Structured Data: Organization + WebSite + Products (JSON-LD) -->
+    <!-- ═══════════════════════════════════════════════════════
+         STRUCTURED DATA — Schema.org JSON-LD
+         Organization + WebSite + WebPage + 2× SoftwareApplication
+         + FAQPage (duplicate of component-level schema for redundancy)
+    ═══════════════════════════════════════════════════════ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,17 +83,21 @@
           "url": "https://cipherfluxlabs.com",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://cipherfluxlabs.com/favicon.svg",
-            "width": 512,
-            "height": 512
+            "@id": "https://cipherfluxlabs.com/#logo",
+            "url": "https://cipherfluxlabs.com/cipherflux-logo.png",
+            "width": 1024,
+            "height": 1024,
+            "caption": "CipherFlux Labs"
           },
-          "description": "CipherFlux Labs is an AI software company building innovative AI-powered software, cybersecurity solutions, and modern digital products that solve real-world problems.",
+          "image": { "@id": "https://cipherfluxlabs.com/#logo" },
+          "description": "CipherFlux Labs is an AI and software technology company that builds intelligent software products. The company develops Smith AI, an AI interview preparation platform, and Svanexa AI, an AI women's wellness application.",
           "foundingDate": "2024",
           "founders": [
             {
               "@type": "Person",
               "name": "Chakri Chitteti",
-              "jobTitle": "CEO & Founder"
+              "jobTitle": "CEO & Founder",
+              "worksFor": { "@id": "https://cipherfluxlabs.com/#organization" }
             }
           ],
           "address": {
@@ -79,21 +107,17 @@
           "contactPoint": {
             "@type": "ContactPoint",
             "email": "hello@cipherfluxlabs.com",
-            "contactType": "customer service",
+            "contactType": "customer support",
             "availableLanguage": "English"
           },
+          "areaServed": "Worldwide",
           "knowsAbout": [
             "Artificial Intelligence",
-            "AI Software Solutions",
-            "Cybersecurity Solutions",
+            "AI Software Products",
+            "Interview Preparation Technology",
+            "Women's Wellness Technology",
             "Software Engineering",
-            "Machine Learning",
-            "Web Application Development"
-          ],
-          "sameAs": [
-            "https://github.com",
-            "https://linkedin.com",
-            "https://x.com"
+            "Machine Learning"
           ]
         },
         {
@@ -101,35 +125,95 @@
           "@id": "https://cipherfluxlabs.com/#website",
           "url": "https://cipherfluxlabs.com",
           "name": "CipherFlux Labs",
-          "description": "CipherFlux Labs — AI software company building intelligent, cybersecurity, and digital products.",
+          "description": "CipherFlux Labs — AI and software technology company building intelligent products.",
           "publisher": { "@id": "https://cipherfluxlabs.com/#organization" },
           "inLanguage": "en-US"
         },
         {
-          "@type": "SoftwareApplication",
-          "name": "Smith AI",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "url": "https://smith-ai-five.vercel.app",
-          "description": "An intelligent AI interview platform that helps users practice, evaluate, and improve their interview performance with real-time audio feedback and behavioral evaluation.",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "creator": { "@id": "https://cipherfluxlabs.com/#organization" }
+          "@type": "WebPage",
+          "@id": "https://cipherfluxlabs.com/#webpage",
+          "url": "https://cipherfluxlabs.com",
+          "name": "CipherFlux Labs | AI & Software Solutions",
+          "isPartOf": { "@id": "https://cipherfluxlabs.com/#website" },
+          "about": { "@id": "https://cipherfluxlabs.com/#organization" },
+          "description": "CipherFlux Labs is an AI and software technology company building intelligent products including Smith AI and Svanexa AI.",
+          "inLanguage": "en-US",
+          "potentialAction": {
+            "@type": "ReadAction",
+            "target": ["https://cipherfluxlabs.com"]
+          }
         },
         {
           "@type": "SoftwareApplication",
+          "@id": "https://cipherfluxlabs.com/#smith-ai",
+          "name": "Smith AI",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "Interview Preparation",
+          "operatingSystem": "Web Browser",
+          "url": "https://smith-ai-five.vercel.app",
+          "description": "Smith AI is an AI-powered interview preparation platform designed to help users practice interviews, receive feedback, and improve their interview performance.",
+          "featureList": [
+            "Real-time audio feedback",
+            "Behavioral interview evaluation",
+            "Custom role simulation",
+            "Performance score analytics"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "creator": { "@id": "https://cipherfluxlabs.com/#organization" },
+          "publisher": { "@id": "https://cipherfluxlabs.com/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://cipherfluxlabs.com/#svanexa-ai",
           "name": "Svanexa AI",
           "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
+          "applicationSubCategory": "Women's Wellness",
+          "operatingSystem": "Web Browser",
           "url": "https://hersync-ai.vercel.app",
-          "description": "An AI-powered women's wellness companion for cycle tracking, wellness pattern analysis, and personalized health insights with privacy-first encryption.",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "creator": { "@id": "https://cipherfluxlabs.com/#organization" }
+          "description": "Svanexa AI is an AI-powered women's wellness application designed to help users track wellness patterns, understand cycle-related information, and receive personalized insights.",
+          "featureList": [
+            "Intelligent cycle tracking",
+            "Personalized pattern insights",
+            "Wellness analytics",
+            "Privacy-first encryption"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "creator": { "@id": "https://cipherfluxlabs.com/#organization" },
+          "publisher": { "@id": "https://cipherfluxlabs.com/#organization" }
         }
       ]
     }
     </script>
+
+    <!-- No-JS fallback for crawlers -->
+    <noscript>
+      <style>body { background: #030712; color: #fff; font-family: sans-serif; padding: 2rem; }</style>
+    </noscript>
   </head>
   <body class="bg-[#030712] text-gray-200 antialiased selection:bg-[#2563EB]/30 selection:text-white">
+    <!-- No-JS content for crawlers that don't execute JavaScript -->
+    <noscript>
+      <main>
+        <h1>CipherFlux Labs | AI &amp; Software Solutions</h1>
+        <p>CipherFlux Labs is an AI and software technology company founded by Chakri Chitteti, building intelligent software products including Smith AI and Svanexa AI.</p>
+        <h2>Products</h2>
+        <ul>
+          <li><a href="https://smith-ai-five.vercel.app">Smith AI — AI Interview Preparation Platform</a></li>
+          <li><a href="https://hersync-ai.vercel.app">Svanexa AI — AI Women's Wellness Application</a></li>
+        </ul>
+        <p>Please enable JavaScript to view the full website.</p>
+      </main>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

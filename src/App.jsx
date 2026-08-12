@@ -7,6 +7,7 @@ import Products from './components/Products';
 import Stats from './components/Stats';
 import Features from './components/Features';
 import Team from './components/Team';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -39,6 +40,7 @@ function App() {
           <Stats />
           <Features />
           <Team />
+          <FAQ />
           <Contact />
         </main>
         <Footer />

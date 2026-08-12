@@ -1,5 +1,24 @@
-# CipherFlux Labs Robots.txt
+# CipherFlux Labs — robots.txt
 User-agent: *
 Allow: /
+
+# Crawlers explicitly allowed (AI search bots)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block build artifacts from indexing
+Disallow: /dist/
 
 Sitemap: https://cipherfluxlabs.com/sitemap.xml
