@@ -6,37 +6,73 @@
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
+    -webkit-tap-highlight-color: transparent;
   }
   
   body {
-    @apply bg-[#030712] text-gray-200 antialiased overflow-x-hidden selection:bg-brand-blue/30 selection:text-white;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-[#030712] text-gray-200 antialiased overflow-x-hidden selection:bg-[#2563EB]/30 selection:text-white;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply text-white font-bold tracking-tight;
   }
+
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 @layer utilities {
-  .glass {
-    @apply bg-[#030712]/80 backdrop-blur-lg border-b border-white/5;
+  .glass-nav {
+    background: rgba(3, 7, 18, 0.75);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.6);
   }
   
   .glass-card {
-    @apply bg-white/[0.02] backdrop-blur-xl border border-white/10 rounded-2xl transition-all duration-300;
+    background: rgba(255, 255, 255, 0.035);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.75rem;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   }
   
   .glass-card:hover {
-    @apply border-brand-blue/35 bg-white/[0.04] shadow-[0_0_25px_rgba(37,99,235,0.08)];
+    background: rgba(255, 255, 255, 0.055);
+    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 24px 48px -12px rgba(37, 99, 235, 0.15);
   }
   
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400;
+  .ios-glass-sheet {
+    background: rgba(11, 17, 32, 0.92);
+    backdrop-filter: blur(32px) saturate(200%);
+    -webkit-backdrop-filter: blur(32px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 2rem;
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.85);
+  }
+
+  .btn-pill-primary {
+    @apply px-7 py-3.5 bg-[#2563EB] hover:bg-[#1d4ed8] text-white rounded-full text-sm font-semibold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(37,99,235,0.3)] hover:shadow-[0_0_35px_rgba(37,99,235,0.5)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] min-h-[44px];
+  }
+
+  .btn-pill-secondary {
+    @apply px-7 py-3.5 bg-white/[0.05] hover:bg-white/[0.1] text-white border border-white/[0.1] hover:border-white/[0.25] rounded-full text-sm font-semibold tracking-wide transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] min-h-[44px];
   }
   
-  .text-gradient-blue {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-blue to-blue-300;
+  .bg-subtle-glow {
+    background: radial-gradient(circle at 50% 30%, rgba(37, 99, 235, 0.08) 0%, rgba(3, 7, 18, 0) 75%);
+  }
+
+  .border-glass {
+    border-color: rgba(255, 255, 255, 0.08);
   }
 }
 
@@ -62,10 +98,9 @@
   background: #030712;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #2563EB;
 }
-

@@ -14,7 +14,6 @@
     <meta name="google-site-verification" content="google294fcdf5a17f518b" />
     <meta name="theme-color" content="#030712" />
 
-
     <!-- Canonical URL -->
     <link rel="canonical" href="https://cipherfluxlabs.com/" />
 
@@ -22,6 +21,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Preload brand logo for instant BootScreen render -->
+    <link rel="preload" href="/cipherflux-logo.png" as="image" type="image/png" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -39,44 +41,96 @@
     <meta name="twitter:description" content="CipherFlux Labs builds innovative AI-powered software, cybersecurity solutions, and modern digital products designed to solve real-world problems." />
     <meta name="twitter:image" content="https://cipherfluxlabs.com/og-image.png" />
 
-    <!-- Efficient Google Fonts Loading -->
+    <!-- Google Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Organization Structured Data (JSON-LD) -->
+    <!-- Structured Data: Organization + WebSite + Products (JSON-LD) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "CipherFlux Labs",
-        "altName": "CipherFlux",
-        "url": "https://cipherfluxlabs.com",
-        "logo": "https://cipherfluxlabs.com/favicon.svg",
-        "description": "CipherFlux Labs is an AI software company building innovative AI-powered software, cybersecurity solutions, and modern digital products.",
-        "founder": {
-          "@type": "Person",
-          "name": "Chakri Chitteti",
-          "jobTitle": "CEO & Founder"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://cipherfluxlabs.com/#organization",
+          "name": "CipherFlux Labs",
+          "alternateName": "CipherFlux",
+          "url": "https://cipherfluxlabs.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cipherfluxlabs.com/favicon.svg",
+            "width": 512,
+            "height": 512
+          },
+          "description": "CipherFlux Labs is an AI software company building innovative AI-powered software, cybersecurity solutions, and modern digital products that solve real-world problems.",
+          "foundingDate": "2024",
+          "founders": [
+            {
+              "@type": "Person",
+              "name": "Chakri Chitteti",
+              "jobTitle": "CEO & Founder"
+            }
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "hello@cipherfluxlabs.com",
+            "contactType": "customer service",
+            "availableLanguage": "English"
+          },
+          "knowsAbout": [
+            "Artificial Intelligence",
+            "AI Software Solutions",
+            "Cybersecurity Solutions",
+            "Software Engineering",
+            "Machine Learning",
+            "Web Application Development"
+          ],
+          "sameAs": [
+            "https://github.com",
+            "https://linkedin.com",
+            "https://x.com"
+          ]
         },
-        "knowsAbout": [
-          "Artificial Intelligence",
-          "AI Software Solutions",
-          "Cybersecurity Solutions",
-          "Software Development",
-          "Productivity Tools"
-        ],
-        "sameAs": [
-          "https://github.com",
-          "https://linkedin.com",
-          "https://x.com"
-        ]
-      }
+        {
+          "@type": "WebSite",
+          "@id": "https://cipherfluxlabs.com/#website",
+          "url": "https://cipherfluxlabs.com",
+          "name": "CipherFlux Labs",
+          "description": "CipherFlux Labs — AI software company building intelligent, cybersecurity, and digital products.",
+          "publisher": { "@id": "https://cipherfluxlabs.com/#organization" },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Smith AI",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://smith-ai-five.vercel.app",
+          "description": "An intelligent AI interview platform that helps users practice, evaluate, and improve their interview performance with real-time audio feedback and behavioral evaluation.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "creator": { "@id": "https://cipherfluxlabs.com/#organization" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Svanexa AI",
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Web",
+          "url": "https://hersync-ai.vercel.app",
+          "description": "An AI-powered women's wellness companion for cycle tracking, wellness pattern analysis, and personalized health insights with privacy-first encryption.",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "creator": { "@id": "https://cipherfluxlabs.com/#organization" }
+        }
+      ]
+    }
     </script>
   </head>
-  <body class="bg-[#030712] text-gray-200 antialiased selection:bg-brand-blue/30 selection:text-white">
+  <body class="bg-[#030712] text-gray-200 antialiased selection:bg-[#2563EB]/30 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
-

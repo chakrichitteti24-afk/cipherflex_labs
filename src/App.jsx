@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Code2 } from 'lucide-react';
+import { useState } from 'react';
+import BootScreen from './components/BootScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,53 +11,26 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Ultra-fast loader for optimal Lighthouse FCP/LCP performance
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 400);
-    return () => clearTimeout(timer);
-  }, []);
+  const [isBooted, setIsBooted] = useState(false);
 
   return (
     <>
-      <AnimatePresence>
-        {loading && (
-          <motion.div 
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-[100] bg-[#030712] flex flex-col items-center justify-center pointer-events-none"
-            aria-hidden="true"
-          >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.25 }}
-              className="flex flex-col items-center"
-            >
-              <div className="p-3 bg-brand-blue/10 border border-brand-blue/20 rounded-xl text-brand-blue mb-4">
-                <Code2 size={32} />
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white mb-6">
-                CIPHERFLUX LABS
-              </span>
-              <div className="w-28 h-0.5 bg-white/5 rounded-full overflow-hidden relative">
-                <motion.div 
-                  initial={{ x: "-100%" }}
-                  animate={{ x: "100%" }}
-                  transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute inset-0 bg-brand-blue"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Flagship Boot Screen — lightweight overlay, non-blocking */}
+      <BootScreen onComplete={() => setIsBooted(true)} />
 
-      <div className="bg-[#030712] min-h-screen selection:bg-brand-blue/30 selection:text-white overflow-x-hidden">
+      {/*
+        Main website — renders immediately in background.
+        Only opacity transition on boot complete (GPU-composited).
+        NO blur/scale on the entire page — that is expensive and blocks LCP.
+      */}
+      <div
+        style={{
+          opacity: isBooted ? 1 : 0,
+          transition: 'opacity 0.5s ease-out',
+          willChange: 'opacity',
+        }}
+        className="bg-[#030712] min-h-screen selection:bg-[#2563EB]/30 selection:text-white overflow-x-hidden"
+      >
         <Navbar />
         <main id="main-content">
           <Hero />
@@ -76,4 +48,3 @@ function App() {
 }
 
 export default App;
-

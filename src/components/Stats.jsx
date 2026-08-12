@@ -1,58 +1,35 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-
-const AnimatedCounter = ({ end, suffix = "", duration = 1.5 }) => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    let startTimestamp = null;
-    let animationFrameId;
-    
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1);
-      
-      setCount(Math.floor(progress * end));
-      
-      if (progress < 1) {
-        animationFrameId = window.requestAnimationFrame(step);
-      }
-    };
-    
-    animationFrameId = window.requestAnimationFrame(step);
-    return () => {
-      if (animationFrameId) window.cancelAnimationFrame(animationFrameId);
-    };
-  }, [end, duration]);
-
-  return <>{count}{suffix}</>;
-};
 
 export default function Stats() {
   const stats = [
-    { value: 2, suffix: "+", label: "Live Products" },
-    { value: 1, suffix: "", label: "Team Member" },
-    { value: 100, suffix: "%", label: "AI Driven" },
-    { value: 24, suffix: "/7", label: "Uptime & Support" }
+    { number: "2+", label: "Products", subtext: "Live Applications" },
+    { number: "AI", label: "Powered", subtext: "Intelligent Systems" },
+    { number: "100%", label: "Real-World", subtext: "Practical Solutions" },
+    { number: "Fast", label: "Growing", subtext: "Software Company" }
   ];
 
   return (
-    <section className="py-16 relative border-t border-white/5 bg-white/[0.01]" aria-label="Key Statistics">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <section className="py-20 relative border-t border-white/[0.08] bg-[#0B1120]/40" aria-label="Key Statistics">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {stats.map((stat, index) => (
             <motion.div 
               key={stat.label}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="text-center"
+              transition={{ duration: 0.5, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              className="glass-card p-6 sm:p-8 text-center border border-white/[0.06] hover:border-[#2563EB]/30 transition-all"
             >
-              <div className="text-4xl md:text-5xl font-bold mb-2 tracking-tight text-white">
-                <AnimatedCounter end={stat.value} suffix={stat.suffix} />
+              <div className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-2 font-sans">
+                <span className="text-[#2563EB]">{stat.number}</span>
               </div>
-              <p className="text-brand-blue text-sm uppercase tracking-wider font-medium">{stat.label}</p>
+              <div className="text-sm font-semibold text-white tracking-wide uppercase mb-1">
+                {stat.label}
+              </div>
+              <div className="text-xs text-[#94A3B8] font-normal">
+                {stat.subtext}
+              </div>
             </motion.div>
           ))}
         </div>
@@ -60,4 +37,3 @@ export default function Stats() {
     </section>
   );
 }
-

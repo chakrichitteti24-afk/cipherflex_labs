@@ -3,55 +3,58 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[90vh] flex items-center pt-28 pb-16 overflow-hidden" aria-label="Hero">
-      {/* Minimal subtle background glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[350px] bg-brand-blue/15 rounded-full blur-[140px] -z-10 pointer-events-none"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-28 sm:pt-32 pb-16 sm:pb-24 overflow-hidden bg-subtle-glow" aria-label="Hero">
+      {/* Extremely subtle radial ambient blue background lighting */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] sm:w-[900px] h-[400px] sm:h-[550px] bg-[#2563EB]/[0.08] rounded-full blur-[140px] pointer-events-none -z-10 animate-pulse-slow" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full text-center relative z-10">
+      {/* Abstract subtle technology lines grid overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none -z-10" />
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 w-full text-center relative z-10">
+        {/* Subtle pill tag */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-blue/25 bg-brand-blue/10 mb-6 shadow-[0_0_15px_rgba(37,99,235,0.15)]"
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#2563EB]/20 bg-[#2563EB]/[0.06] backdrop-blur-md mb-8"
         >
-          <Sparkles size={14} className="text-brand-blue" aria-hidden="true" />
-          <span className="text-xs sm:text-sm text-brand-blue font-medium tracking-wide">Next-Gen AI Software Company</span>
+          <Sparkles size={13} className="text-[#2563EB]" aria-hidden="true" />
+          <span className="text-xs font-medium tracking-wide text-[#94A3B8]">
+            Flagship AI & Software Engineering
+          </span>
         </motion.div>
         
+        {/* Headline with ONLY 'Future' in CipherFlux blue */}
         <motion.h1 
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-white leading-[1.1]"
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="text-[2.2rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 sm:mb-8 text-white leading-[1.1] sm:leading-[1.08]"
         >
-          Build the <span className="text-brand-blue bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-brand-blue">Future</span> <br className="hidden sm:inline" /> with AI Solutions.
+          Build the <span className="text-[#2563EB]">Future</span> with AI.
         </motion.h1>
         
+        {/* Supporting text */}
         <motion.p 
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 font-light leading-relaxed"
+          transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          className="text-base sm:text-lg md:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-12 font-normal leading-relaxed"
         >
-          <strong className="font-normal text-white">CipherFlux Labs</strong> creates innovative AI-powered software products, enterprise cybersecurity solutions, and modern digital applications designed to solve real-world problems.
+          We build intelligent software products that solve real-world problems through AI, cybersecurity, and modern technology.
         </motion.p>
         
+        {/* CTA Buttons */}
         <motion.div 
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto sm:max-w-none"
+          transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col xs:flex-row sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-xs mx-auto sm:max-w-none"
         >
-          <a 
-            href="#products" 
-            className="w-full sm:w-auto px-8 py-3.5 bg-brand-blue hover:bg-blue-600 text-white rounded-full font-medium transition-all flex items-center justify-center gap-2 text-sm sm:text-base shadow-[0_0_25px_rgba(37,99,235,0.3)] hover:shadow-[0_0_35px_rgba(37,99,235,0.5)] active:scale-[0.98]"
-          >
-            Explore AI Products <ArrowRight size={18} aria-hidden="true" />
+          <a href="#products" className="btn-pill-primary w-full sm:w-auto justify-center" aria-label="Explore CipherFlux Labs products">
+            Explore Products <ArrowRight size={16} aria-hidden="true" />
           </a>
-          <a 
-            href="#contact" 
-            className="w-full sm:w-auto px-8 py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-blue/40 text-white rounded-full font-medium transition-all text-sm sm:text-base active:scale-[0.98]"
-          >
+          <a href="#contact" className="btn-pill-secondary w-full sm:w-auto justify-center" aria-label="Contact CipherFlux Labs">
             Contact Us
           </a>
         </motion.div>
@@ -59,4 +62,3 @@ export default function Hero() {
     </section>
   );
 }
-

@@ -1,28 +1,28 @@
-import { Code2 } from 'lucide-react';
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#030712] border-t border-white/5 pt-16 pb-8 relative z-10" aria-label="Site Footer">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
-          <div className="sm:col-span-2">
-            <a href="#home" className="flex items-center gap-2.5 mb-6 group inline-flex focus:outline-none focus:ring-2 focus:ring-brand-blue rounded-lg" aria-label="CipherFlux Labs - Back to top">
-              <div className="p-2 bg-brand-blue/10 border border-brand-blue/20 rounded-lg text-brand-blue transition-colors group-hover:bg-brand-blue/20">
-                <Code2 size={20} aria-hidden="true" />
+    <footer className="bg-[#030712] border-t border-white/[0.08] pt-20 pb-12 relative z-10" aria-label="Site Footer">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 pb-16">
+          {/* Brand Column */}
+          <div className="md:col-span-5 space-y-6">
+            <a href="#home" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#2563EB] rounded-full" aria-label="CipherFlux Labs - Back to top">
+              <div className="w-9 h-9 rounded-full bg-[#2563EB]/10 border border-[#2563EB]/25 flex items-center justify-center group-hover:bg-[#2563EB]/20 transition-colors">
+                <span className="text-[#2563EB] font-bold text-[10px] leading-none tracking-tighter select-none">&lt;/&gt;</span>
               </div>
-              <span className="text-xl font-bold tracking-tight text-white">CipherFlux Labs</span>
+              <span className="text-lg font-bold tracking-tight text-white">CipherFlux Labs</span>
             </a>
-            <p className="text-gray-400 max-w-sm mb-6 leading-relaxed font-light text-sm">
-              An innovative <strong className="font-normal text-gray-300">AI software company</strong> dedicated to building artificial intelligence applications, cybersecurity solutions, and modern digital products that solve real-world problems.
+            <p className="text-[#94A3B8] text-sm font-normal leading-relaxed max-w-sm">
+              An innovative AI software company dedicated to building artificial intelligence applications, cybersecurity solutions, and modern digital products that solve real-world problems.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 pt-2">
               <a 
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="CipherFlux Labs GitHub Repository" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-blue hover:border-brand-blue/30 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-11 h-11 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/20 transition-all duration-300"
               >
                 <FiGithub size={16} />
               </a>
@@ -31,7 +31,7 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="CipherFlux Labs LinkedIn Page" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-blue hover:border-brand-blue/30 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-11 h-11 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/20 transition-all duration-300"
               >
                 <FiLinkedin size={16} />
               </a>
@@ -40,7 +40,7 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="CipherFlux Labs Twitter / X Account" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-blue hover:border-brand-blue/30 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-11 h-11 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/20 transition-all duration-300"
               >
                 <FiTwitter size={16} />
               </a>
@@ -49,44 +49,55 @@ export default function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="CipherFlux Labs Instagram Profile" 
-                className="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-brand-blue hover:border-brand-blue/30 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-blue"
+                className="w-11 h-11 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB] hover:bg-[#2563EB]/20 transition-all duration-300"
               >
                 <FiInstagram size={16} />
               </a>
             </div>
           </div>
           
-          <div>
-            <h3 className="text-base font-semibold text-white mb-6 tracking-wide">Quick Links</h3>
-            <ul className="space-y-3.5">
-              <li><a href="#home" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Home</a></li>
-              <li><a href="#about" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">About Us</a></li>
-              <li><a href="#products" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">AI Products</a></li>
-              <li><a href="#team" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Leadership Team</a></li>
-              <li><a href="#contact" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Contact</a></li>
+          {/* Quick Links */}
+          <div className="md:col-span-3 space-y-4">
+            <h3 className="text-xs uppercase tracking-widest text-white font-semibold mb-4">Navigation</h3>
+            <ul className="space-y-3">
+              <li><a href="#home" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Home</a></li>
+              <li><a href="#about" className="text-sm text-[#94A3B8] hover:text-white transition-colors">About Us</a></li>
+              <li><a href="#products" className="text-sm text-[#94A3B8] hover:text-white transition-colors">AI Products</a></li>
+              <li><a href="#team" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Leadership</a></li>
+              <li><a href="#contact" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
           
-          <div>
-            <h3 className="text-base font-semibold text-white mb-6 tracking-wide">Legal & Privacy</h3>
-            <ul className="space-y-3.5">
-              <li><a href="#" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Terms of Service</a></li>
-              <li><a href="#" className="text-sm text-gray-400 hover:text-brand-blue transition-colors focus:outline-none focus:underline">Cookie Policy</a></li>
+          {/* Products & Legal */}
+          <div className="md:col-span-4 space-y-4">
+            <h3 className="text-xs uppercase tracking-widest text-white font-semibold mb-4">Products & Legal</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://smith-ai-five.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm text-[#94A3B8] hover:text-[#2563EB] transition-colors inline-flex items-center gap-1.5">
+                  Smith AI — Interview Copilot
+                </a>
+              </li>
+              <li>
+                <a href="https://hersync-ai.vercel.app" target="_blank" rel="noopener noreferrer" className="text-sm text-[#94A3B8] hover:text-[#2563EB] transition-colors inline-flex items-center gap-1.5">
+                  Svanexa AI — Women's Wellness
+                </a>
+              </li>
+              <li><a href="#" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-sm text-[#94A3B8] hover:text-white transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
-          <p className="text-gray-500 text-xs">
-            CipherFlux Labs © 2026. All rights reserved.
+        {/* Bottom copyright */}
+        <div className="pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-[#94A3B8]/80 font-normal">
+            © 2026 CipherFlux Labs. All rights reserved.
           </p>
-          <p className="text-gray-500 text-xs flex items-center justify-center gap-1">
-            Building Innovative Software in India
+          <p className="text-xs text-[#94A3B8]/80 font-normal">
+            Precision AI & Digital Engineering
           </p>
         </div>
       </div>
     </footer>
   );
 }
-
