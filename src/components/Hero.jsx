@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <Sparkles size={13} className="text-[#2563EB]" aria-hidden="true" />
           <span className="text-xs font-medium tracking-wide text-[#94A3B8]">
-            Flagship AI & Software Engineering
+            CipherFlux Labs — Flagship AI &amp; Software Engineering
           </span>
         </motion.div>
         
@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-[2.2rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 sm:mb-8 text-white leading-[1.1] sm:leading-[1.08]"
         >
-          Build the <span className="text-[#2563EB]">Future</span> with AI.
+          <span className="sr-only">CipherFlux Labs — </span>Build the <span className="text-[#2563EB]">Future</span> with AI.
         </motion.h1>
         
         {/* Supporting text */}
@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="text-base sm:text-lg md:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-12 font-normal leading-relaxed"
         >
-          We build intelligent software products that solve real-world problems through AI, cybersecurity, and modern technology.
+          At CipherFlux Labs (CipherFlux), we build intelligent software products that solve real-world problems through AI, cybersecurity, and modern technology.
         </motion.p>
         
         {/* CTA Buttons */}

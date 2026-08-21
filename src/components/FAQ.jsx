@@ -20,8 +20,8 @@ const faqs = [
     a: 'Svanexa AI is an AI-powered women\'s wellness application designed to help users track wellness patterns, understand cycle-related information, and receive personalized health insights. It is built with a privacy-first approach and end-to-end data protection.'
   },
   {
-    q: 'Who founded CipherFlux Labs?',
-    a: 'CipherFlux Labs was founded by Chakri Chitteti, who serves as CEO and Founder. The company is focused on building AI-powered software products that solve real-world problems.'
+    q: 'Who is on the CipherFlux Labs team?',
+    a: 'CipherFlux Labs was founded by Chakri Chitteti (CEO & Founder). The team includes S. Karthik (Operations Manager), P. Gayani (Product Manager), and S. Harshitha (Product Manager).'
   },
   {
     q: 'What does CipherFlux Labs specialize in?',

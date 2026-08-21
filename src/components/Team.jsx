@@ -15,6 +15,17 @@ const teamMembers = [
     }
   },
   {
+    name: "S. Karthik",
+    role: "Operations Manager",
+    badgeIcon: Briefcase,
+    description: "Overseeing operational workflows, project delivery, resource management, and cross-functional coordination to ensure seamless execution.",
+    socials: {
+      linkedin: "https://linkedin.com",
+      github: "https://github.com",
+      twitter: "https://x.com"
+    }
+  },
+  {
     name: "P. Gayani",
     role: "Product Manager",
     badgeIcon: Briefcase,
@@ -41,7 +52,7 @@ const teamMembers = [
 export default function Team() {
   return (
     <section id="team" className="py-16 sm:py-28 relative border-t border-white/[0.08]" aria-labelledby="team-heading">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -59,8 +70,8 @@ export default function Team() {
           </p>
         </motion.div>
 
-        {/* Responsive Team Grid: Desktop 3 columns, Tablet 2 columns, Mobile 1 column */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Responsive Team Grid: Desktop 4 columns, Tablet 2 columns, Mobile 1 column */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member, index) => {
             const BadgeIcon = member.badgeIcon;
             return (
@@ -70,7 +81,7 @@ export default function Team() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className="glass-card p-8 sm:p-9 text-center border border-white/[0.08] relative group flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300"
+                className="glass-card p-6 sm:p-7 text-center border border-white/[0.08] relative group flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300"
               >
                 {/* Ambient Profile Glow */}
                 <div className="absolute inset-0 bg-[#2563EB]/[0.03] rounded-3xl pointer-events-none -z-10 group-hover:bg-[#2563EB]/[0.07] transition-colors duration-300" />

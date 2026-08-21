@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 
 export default function Stats() {
   const stats = [
-    { number: "2+", label: "Products", subtext: "Live Applications" },
-    { number: "AI", label: "Powered", subtext: "Intelligent Systems" },
-    { number: "100%", label: "Real-World", subtext: "Practical Solutions" },
-    { number: "Fast", label: "Growing", subtext: "Software Company" }
+    { number: "2+", label: "Flagship Products", subtext: "Smith AI & Svanexa AI" },
+    { number: "100%", label: "AI Powered", subtext: "State-of-the-Art Intelligence" },
+    { number: "0-Trust", label: "Security First", subtext: "End-to-End Encryption" },
+    { number: "Global", label: "Deployment", subtext: "Built in India • Worldwide" }
   ];
 
   return (

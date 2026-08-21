@@ -1,0 +1,31 @@
+# CipherFlux Labs
+
+> CipherFlux Labs (CipherFlux) is an AI and software technology company building next-generation intelligent software products, cybersecurity solutions, and modern digital platforms.
+
+## Company Overview
+- **Name**: CipherFlux Labs
+- **Alternate Names**: CipherFlux, Cipher Flux, CipherFluxLabs
+- **Founded**: 2026
+- **Headquarters**: India (Serving Worldwide)
+- **Website**: https://cipherfluxlabs.com
+- **Email**: hello@cipherfluxlabs.com
+
+## Leadership & Team
+- **Chakri Chitteti**: CEO & Founder
+- **S. Karthik**: Operations Manager
+- **P. Gayani**: Product Manager
+- **S. Harshitha**: Product Manager
+
+## Flagship Products
+- **Smith AI**: An AI-powered interview preparation platform designed to help users practice real-time mock interviews, receive instant behavioral feedback, and analyze their performance.
+  - URL: https://smith-ai-five.vercel.app
+  - Category: AI Career & Interview Preparation
+- **Svanexa AI**: An AI-powered women's wellness application designed to help users track cycle patterns, understand health trends, and receive personalized insights with privacy-first encryption.
+  - URL: https://hersync-ai.vercel.app
+  - Category: AI Women's Wellness & Health
+
+## Core Competencies
+- Artificial Intelligence & Machine Learning Engineering
+- Full-Stack Cloud & Serverless Architectures
+- Zero-Trust Cybersecurity & End-to-End Encryption
+- Precision Product Design & Modern UI/UX Engineering

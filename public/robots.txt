@@ -2,23 +2,37 @@
 User-agent: *
 Allow: /
 
-# Crawlers explicitly allowed (AI search bots)
+# AI Crawlers & LLM Overviews explicitly allowed
 User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Applebot-Extended
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
-# Block build artifacts from indexing
+# Block build artifacts
 Disallow: /dist/
 
 Sitemap: https://cipherfluxlabs.com/sitemap.xml
+# LLMs documentation
+# See https://cipherfluxlabs.com/llms.txt for AI assistant summaries
