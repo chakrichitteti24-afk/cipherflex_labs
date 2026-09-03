@@ -21,7 +21,7 @@ const teamMembers = [
     badgeIcon: Briefcase,
     description: "Overseeing operational workflows, project delivery, resource management, and cross-functional coordination to ensure seamless execution.",
     socials: {
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/karthik-s-236891321?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       github: "https://github.com/s17826320-collab"
     }
   },
