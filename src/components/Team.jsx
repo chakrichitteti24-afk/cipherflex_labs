@@ -11,8 +11,8 @@ const teamMembers = [
     badgeIcon: ShieldCheck,
     description: "Leading CipherFlux Labs with a vision to build innovative AI-powered software products, cybersecurity solutions, and modern digital platforms.",
     socials: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
+      linkedin: "https://www.linkedin.com/in/chakri-chitteti-a7978b415?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      github: "https://github.com/chakrichitteti24-afk"
     }
   },
   {
@@ -22,7 +22,7 @@ const teamMembers = [
     description: "Overseeing operational workflows, project delivery, resource management, and cross-functional coordination to ensure seamless execution.",
     socials: {
       linkedin: "https://linkedin.com",
-      github: "https://github.com"
+      github: "https://github.com/s17826320-collab"
     }
   },
   {
@@ -41,8 +41,8 @@ const teamMembers = [
     badgeIcon: Briefcase,
     description: "Responsible for product strategy, product improvements, user experience, and coordinating product development.",
     socials: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
+      linkedin: "https://www.linkedin.com/in/sajja-harshitha-b24867428?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      github: "https://github.com/sajjaharshitha2006"
     }
   }
 ];
