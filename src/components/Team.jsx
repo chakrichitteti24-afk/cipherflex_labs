@@ -103,39 +103,48 @@ export default function Team() {
             return (
               <motion.div 
                 key={member.name}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
-                className="glass-card p-5 sm:p-7 text-center border border-white/[0.08] relative group flex flex-col justify-between hover:-translate-y-1 transition-all duration-300 w-[82vw] sm:w-[320px] md:w-auto shrink-0 snap-center h-full"
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.1, 
+                  ease: [0.16, 1, 0.3, 1] 
+                }}
+                whileHover={{ 
+                  y: -6, 
+                  boxShadow: '0 20px 40px -15px rgba(37,99,235,0.15)',
+                  borderColor: 'rgba(255,255,255,0.15)'
+                }}
+                className="glass-card p-5 sm:p-7 text-center border border-white/[0.08] relative group flex flex-col justify-between transition-colors duration-300 w-[82vw] sm:w-[320px] md:w-auto shrink-0 snap-center h-full"
               >
                 <div className="flex flex-col items-center flex-1">
                   {/* Avatar Badge */}
-                  <div className="w-16 h-16 sm:w-18 sm:h-18 mx-auto rounded-full mb-4 sm:mb-5 bg-white/[0.04] border border-white/[0.08] flex items-center justify-center relative overflow-hidden group-hover:border-[#2563EB]/40 group-hover:bg-[#2563EB]/10 transition-all duration-300 shrink-0">
-                    <User size={28} className="text-[#2563EB]" aria-hidden="true" />
+                  <div className="w-16 h-16 sm:w-18 sm:h-18 mx-auto rounded-full mb-4 sm:mb-5 bg-white/[0.04] border border-white/[0.08] flex items-center justify-center relative overflow-hidden group-hover:border-[#2563EB]/50 group-hover:bg-[#2563EB]/15 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(37,99,235,0.2)] transition-all duration-500 ease-out shrink-0">
+                    <User size={28} className="text-[#2563EB] transition-transform duration-500 ease-out group-hover:scale-110" aria-hidden="true" />
                   </div>
                   
                   <h3 className="text-lg sm:text-xl font-bold text-white mb-1 tracking-tight">{member.name}</h3>
                   
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-gray-300 text-xs font-medium mb-4 shrink-0">
+                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-gray-300 text-xs font-medium mb-4 shrink-0 transition-colors duration-300 group-hover:border-white/[0.15] group-hover:bg-white/[0.08]">
                     <BadgeIcon size={12} className="text-[#2563EB]" aria-hidden="true" />
                     <span>{member.role}</span>
                   </div>
 
-                  <p className="text-[#94A3B8] text-xs sm:text-sm leading-relaxed font-normal mb-5 flex-1">
+                  <p className="text-[#94A3B8] text-xs sm:text-sm leading-relaxed font-normal mb-5 flex-1 group-hover:text-gray-300 transition-colors duration-300">
                     {member.description}
                   </p>
                 </div>
                 
-                {/* Social Connect Links — Perfectly aligned bottom baseline */}
-                <div className="flex items-center justify-center gap-2.5 pt-3.5 border-t border-white/[0.06] shrink-0">
+                {/* Social Connect Links */}
+                <div className="flex items-center justify-center gap-2.5 pt-3.5 border-t border-white/[0.06] shrink-0 group-hover:border-white/[0.12] transition-colors duration-300">
                   <a 
                     href={member.socials.linkedin} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     onClick={() => triggerHaptic(8)}
                     aria-label={`${member.name} LinkedIn Profile`} 
-                    className="w-9 h-9 rounded-full bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB]/50 hover:bg-[#2563EB]/10 transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-[#2563EB]/50 min-h-[36px] min-w-[36px]"
+                    className="w-9 h-9 rounded-full bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB]/60 hover:bg-[#2563EB]/15 hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-1 transition-all duration-300 ease-out focus:outline-none focus:ring-1 focus:ring-[#2563EB]/50 min-h-[36px] min-w-[36px]"
                   >
                     <FiLinkedin size={15} />
                   </a>
@@ -145,7 +154,7 @@ export default function Team() {
                     rel="noopener noreferrer"
                     onClick={() => triggerHaptic(8)}
                     aria-label={`${member.name} GitHub Profile`} 
-                    className="w-9 h-9 rounded-full bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB]/50 hover:bg-[#2563EB]/10 transition-all duration-200 focus:outline-none focus:ring-1 focus:ring-[#2563EB]/50 min-h-[36px] min-w-[36px]"
+                    className="w-9 h-9 rounded-full bg-white/[0.03] border border-white/[0.06] flex items-center justify-center text-[#94A3B8] hover:text-white hover:border-[#2563EB]/60 hover:bg-[#2563EB]/15 hover:shadow-[0_0_15px_rgba(37,99,235,0.2)] hover:-translate-y-1 transition-all duration-300 ease-out focus:outline-none focus:ring-1 focus:ring-[#2563EB]/50 min-h-[36px] min-w-[36px]"
                   >
                     <FiGithub size={15} />
                   </a>
