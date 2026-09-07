@@ -6,7 +6,7 @@ export default function Stats() {
   const isInView = useInView(ref, { once: true, margin: "-30px" });
 
   const stats = [
-    { number: "2+", label: "Flagship Products", subtext: "Smith AI & Svanexa AI" },
+    { number: "2+", label: "Flagship Products", subtext: "Atlyra & Svanexa AI" },
     { number: "100%", label: "AI Powered", subtext: "State-of-the-Art Intelligence" },
     { number: "0-Trust", label: "Security First", subtext: "End-to-End Encryption" },
     { number: "Global", label: "Deployment", subtext: "Built in India • Worldwide" }

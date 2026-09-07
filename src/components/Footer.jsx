@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="https://smith-ai-five.vercel.app" target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm text-[#94A3B8] hover:text-[#2563EB] transition-colors inline-flex items-center gap-1 py-0.5">
-                  Smith AI — Interview Copilot
+                  Atlyra — Interview Copilot
                 </a>
               </li>
               <li>

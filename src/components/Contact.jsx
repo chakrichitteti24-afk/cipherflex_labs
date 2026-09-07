@@ -7,7 +7,7 @@ import { triggerHaptic } from '../utils/haptics';
 const topics = [
   "General Inquiry",
   "Product Partnership",
-  "Smith AI Feedback",
+  "Atlyra Feedback",
   "Svanexa AI Feedback",
   "Engineering & Careers"
 ];

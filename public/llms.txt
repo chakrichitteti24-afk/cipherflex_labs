@@ -17,7 +17,7 @@
 - **S. Harshitha**: Product Manager
 
 ## Flagship Products
-- **Smith AI**: An AI-powered interview preparation platform designed to help users practice real-time mock interviews, receive instant behavioral feedback, and analyze their performance.
+- **Atlyra**: An AI-powered interview preparation platform designed to help users practice real-time mock interviews, receive instant behavioral feedback, and analyze their performance.
   - URL: https://smith-ai-five.vercel.app
   - Category: AI Career & Interview Preparation
 - **Svanexa AI**: An AI-powered women's wellness application designed to help users track cycle patterns, understand health trends, and receive personalized insights with privacy-first encryption.

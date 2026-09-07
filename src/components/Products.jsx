@@ -122,7 +122,7 @@ export default function Products() {
 
         <div className="space-y-10 sm:space-y-20">
           {/* ========================================================================= */}
-          {/* PRODUCT 1: SMITH AI */}
+          {/* PRODUCT 1: ATLYRA */}
           {/* ========================================================================= */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -141,7 +141,7 @@ export default function Products() {
                   </div>
                   <div>
                     <span className="text-[11px] text-[#2563EB] uppercase tracking-wider font-semibold block leading-none mb-1">Product 01</span>
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">SMITH AI</h3>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-tight">ATLYRA</h3>
                   </div>
                 </div>
 
@@ -182,7 +182,7 @@ export default function Products() {
                     rel="noopener noreferrer"
                     onClick={() => triggerHaptic(10)}
                     className="btn-pill-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 text-sm font-semibold active:scale-[0.98]"
-                    aria-label="Visit Smith AI web application"
+                    aria-label="Visit Atlyra web application"
                   >
                     <span>Visit Product</span>
                     <ExternalLink size={14} aria-hidden="true" />

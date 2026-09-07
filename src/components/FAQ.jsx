@@ -12,12 +12,12 @@ const faqs = [
   {
     category: 'Products',
     q: 'What products does CipherFlux Labs build?',
-    a: 'CipherFlux Labs currently develops two products: Smith AI, an AI-powered interview preparation platform, and Svanexa AI, an AI-powered women\'s wellness application. Both products are live and publicly accessible.'
+    a: 'CipherFlux Labs currently develops two products: Atlyra, an AI-powered interview preparation platform, and Svanexa AI, an AI-powered women\'s wellness application. Both products are live and publicly accessible.'
   },
   {
     category: 'Products',
-    q: 'What is Smith AI?',
-    a: 'Smith AI is an AI-powered interview preparation platform designed to help users practice interviews, receive real-time feedback, and improve their overall interview performance. It simulates realistic interview scenarios and provides performance analytics.'
+    q: 'What is Atlyra?',
+    a: 'Atlyra is an AI-powered interview preparation platform designed to help users practice interviews, receive real-time feedback, and improve their overall interview performance. It simulates realistic interview scenarios and provides performance analytics.'
   },
   {
     category: 'Products',

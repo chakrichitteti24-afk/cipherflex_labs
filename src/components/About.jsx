@@ -24,7 +24,7 @@ export default function About() {
     {
       icon: <Sparkles size={16} className="text-[#2563EB]" />,
       title: "Intelligent AI Products",
-      desc: "Developing autonomous platforms like Smith AI (AI Interview Copilot) and Svanexa AI (Women's Wellness Companion)."
+      desc: "Developing autonomous platforms like Atlyra (AI Interview Copilot) and Svanexa AI (Women's Wellness Companion)."
     },
     {
       icon: <ShieldCheck size={16} className="text-[#2563EB]" />,
