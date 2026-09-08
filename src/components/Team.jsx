@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { User, ShieldCheck, Briefcase } from 'lucide-react';
+import { User, ShieldCheck, Briefcase, Megaphone } from 'lucide-react';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { triggerHaptic } from '../utils/haptics';
 
@@ -43,6 +43,16 @@ const teamMembers = [
     socials: {
       linkedin: "https://www.linkedin.com/in/sajja-harshitha-b24867428?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       github: "https://github.com/sajjaharshitha2006"
+    }
+  },
+  {
+    name: "K. Chandra Shekar",
+    role: "Chief Marketing Manager",
+    badgeIcon: Megaphone,
+    description: "Spearheading marketing strategy, brand positioning, user acquisition, and driving growth initiatives for CipherFlux Labs and its product ecosystem.",
+    socials: {
+      linkedin: "https://linkedin.com",
+      github: "https://github.com"
     }
   }
 ];
@@ -96,7 +106,7 @@ export default function Team() {
         <div 
           ref={carouselRef}
           onScroll={handleScroll}
-          className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 items-stretch overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-none pb-4 md:pb-0 touch-pan-x -mx-4 px-4 sm:mx-0 sm:px-0"
+          className="flex md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 items-stretch overflow-x-auto md:overflow-x-visible snap-x snap-mandatory scrollbar-none pb-4 md:pb-0 touch-pan-x -mx-4 px-4 sm:mx-0 sm:px-0"
         >
           {teamMembers.map((member, index) => {
             const BadgeIcon = member.badgeIcon;

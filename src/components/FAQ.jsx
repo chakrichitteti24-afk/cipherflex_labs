@@ -27,7 +27,7 @@ const faqs = [
   {
     category: 'Team',
     q: 'Who is on the CipherFlux Labs team?',
-    a: 'CipherFlux Labs was founded by Chakri Chitteti (CEO & Founder). The team includes S. Karthik (Operations Manager), P. Gayani (Product Manager), and S. Harshitha (Product Manager).'
+    a: 'CipherFlux Labs was founded by Chakri Chitteti (CEO & Founder). The team includes S. Karthik (Operations Manager), P. Gayani (Product Manager), S. Harshitha (Product Manager), and K. Chandra Shekar (Chief Marketing Manager).'
   },
   {
     category: 'Company',

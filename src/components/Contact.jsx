@@ -81,14 +81,14 @@ export default function Contact() {
                       </div>
                       <div className="truncate">
                         <p className="text-[#94A3B8] text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-0.5">Email</p>
-                        <a href="mailto:hello@cipherfluxlabs.com" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
-                          hello@cipherfluxlabs.com
+                        <a href="mailto:cipherfluxlabs@gmail.com" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
+                          cipherfluxlabs@gmail.com
                         </a>
                       </div>
                     </div>
                     <button
                       type="button"
-                      onClick={() => handleCopy('hello@cipherfluxlabs.com', 'Email address')}
+                      onClick={() => handleCopy('cipherfluxlabs@gmail.com', 'Email address')}
                       className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/[0.06] transition-colors shrink-0 min-w-[36px] min-h-[36px] flex items-center justify-center active:scale-95"
                       aria-label="Copy email address"
                     >
@@ -104,14 +104,14 @@ export default function Contact() {
                       </div>
                       <div className="truncate">
                         <p className="text-[#94A3B8] text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-0.5">Phone</p>
-                        <a href="tel:+919876543210" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
-                          +91 98765 43210
+                        <a href="tel:+919391356262" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
+                          +91 93913 56262
                         </a>
                       </div>
                     </div>
                     <button
                       type="button"
-                      onClick={() => handleCopy('+91 98765 43210', 'Phone number')}
+                      onClick={() => handleCopy('+91 93913 56262', 'Phone number')}
                       className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/[0.06] transition-colors shrink-0 min-w-[36px] min-h-[36px] flex items-center justify-center active:scale-95"
                       aria-label="Copy phone number"
                     >

@@ -8,13 +8,15 @@
 - **Founded**: 2026
 - **Headquarters**: India (Serving Worldwide)
 - **Website**: https://cipherfluxlabs.com
-- **Email**: hello@cipherfluxlabs.com
+- **Email**: cipherfluxlabs@gmail.com
+- **Phone**: +91 93913 56262
 
 ## Leadership & Team
 - **Chakri Chitteti**: CEO & Founder
 - **S. Karthik**: Operations Manager
 - **P. Gayani**: Product Manager
 - **S. Harshitha**: Product Manager
+- **K. Chandra Shekar**: Chief Marketing Manager
 
 ## Flagship Products
 - **Atlyra**: An AI-powered interview preparation platform designed to help users practice real-time mock interviews, receive instant behavioral feedback, and analyze their performance.
