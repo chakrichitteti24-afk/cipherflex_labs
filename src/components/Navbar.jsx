@@ -19,7 +19,7 @@ export default function Navbar() {
       }
 
       // Check current section in viewport
-      const sections = ['home', 'about', 'products', 'team', 'faq', 'contact'];
+      const sections = ['home', 'about', 'products', 'pricing', 'team', 'faq', 'contact'];
       const scrollPosition = window.scrollY + 220;
 
       for (const section of sections) {
@@ -66,6 +66,7 @@ export default function Navbar() {
     { name: 'Home', href: '#home', id: 'home' },
     { name: 'About', href: '#about', id: 'about' },
     { name: 'Products', href: '#products', id: 'products' },
+    { name: 'Pricing', href: '#pricing', id: 'pricing' },
     { name: 'Team', href: '#team', id: 'team' },
     { name: 'FAQ', href: '#faq', id: 'faq' },
     { name: 'Contact', href: '#contact', id: 'contact' },

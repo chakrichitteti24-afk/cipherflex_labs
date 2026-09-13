@@ -33,10 +33,25 @@ const faqs = [
     category: 'Company',
     q: 'What does CipherFlux Labs specialize in?',
     a: 'CipherFlux Labs specializes in artificial intelligence, software engineering, and building modern digital products. The company focuses on combining AI technology with clean, user-centered product design.'
+  },
+  {
+    category: 'Services',
+    q: 'What services does CipherFlux Labs provide?',
+    a: 'We specialize in end-to-end AI automation workflows, custom AI chatbots, document processing pipelines, and full-stack web application development (MVPs and SaaS products). We help businesses automate manual tasks and launch digital products quickly.'
+  },
+  {
+    category: 'Services',
+    q: 'How does the monthly maintenance retainer work?',
+    a: 'Our monthly maintenance plans ensure 24/7 reliability, proactive error monitoring, API token renewals, and regular security updates. Each plan also includes dedicated developer hours every month for minor adjustments, prompt tuning, and feature improvements.'
+  },
+  {
+    category: 'Services',
+    q: 'Who covers third-party hosting and AI API costs?',
+    a: 'Under our transparent company policy, all third-party subscriptions—such as cloud hosting (Vercel/Render/VPS), domains, and AI API consumption (OpenAI, Gemini)—are billed directly to your own accounts with zero agency markup.'
   }
 ];
 
-const categories = ['All', 'Company', 'Products', 'Team'];
+const categories = ['All', 'Company', 'Services', 'Products', 'Team'];
 
 export default function FAQ() {
   const [openIndexes, setOpenIndexes] = useState([0]);

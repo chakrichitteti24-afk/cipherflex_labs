@@ -1,15 +1,15 @@
 # CipherFlux Labs
 
-> CipherFlux Labs (CipherFlux) is an AI and software technology company building next-generation intelligent software products, cybersecurity solutions, and modern digital platforms.
+> CipherFlux Labs (CipherFlux) is an AI and software technology company building next-generation intelligent software products, custom full-stack web applications, business process automations, and AI agents.
 
 ## Company Overview
 - **Name**: CipherFlux Labs
-- **Alternate Names**: CipherFlux, Cipher Flux, CipherFluxLabs
+- **Alternate Names**: CipherFlux, Cipher Flux, CipherFluxLabs, CipherFlux AI
 - **Founded**: 2026
-- **Headquarters**: India (Serving Worldwide)
+- **Headquarters**: India (Serving Worldwide Clients)
 - **Website**: https://cipherfluxlabs.com
 - **Email**: cipherfluxlabs@gmail.com
-- **Phone**: +91 93913 56262
+- **Phone / WhatsApp**: +91 93913 56262
 
 ## Leadership & Team
 - **Chakri Chitteti**: CEO & Founder
@@ -18,16 +18,28 @@
 - **S. Harshitha**: Product Manager
 - **K. Chandra Shekar**: Chief Marketing Manager
 
-## Flagship Products
-- **Atlyra**: An AI-powered interview preparation platform designed to help users practice real-time mock interviews, receive instant behavioral feedback, and analyze their performance.
+## Core Products
+- **Atlyra**: AI-powered interview preparation platform providing real-time audio analysis, mock interviews, and behavioral performance insights.
   - URL: https://smith-ai-five.vercel.app
-  - Category: AI Career & Interview Preparation
-- **Svanexa AI**: An AI-powered women's wellness application designed to help users track cycle patterns, understand health trends, and receive personalized insights with privacy-first encryption.
+- **Svanexa AI**: AI women's wellness application delivering cycle tracking, pattern analytics, and health guidance with privacy-first encryption.
   - URL: https://hersync-ai.vercel.app
-  - Category: AI Women's Wellness & Health
 
-## Core Competencies
-- Artificial Intelligence & Machine Learning Engineering
-- Full-Stack Cloud & Serverless Architectures
-- Zero-Trust Cybersecurity & End-to-End Encryption
-- Precision Product Design & Modern UI/UX Engineering
+## Services & Solutions
+CipherFlux Labs provides end-to-end client engineering and automation services:
+1. **Business Workflow & AI Automation**:
+   - Multi-step automated workflows (Make.com, Zapier, n8n, webhooks).
+   - WhatsApp & Website AI customer support bots.
+   - Intelligent document parsing and OCR (invoices, receipts, legal docs).
+   - Starter packages starting from ₹3,500 – ₹18,000 / $45 – $220 with monthly maintenance retainers.
+2. **Full-Stack Web & AI Application Development**:
+   - Custom MVP and SaaS development (React, Next.js, Node.js, Python, Supabase, PostgreSQL).
+   - Payment gateway integration (Stripe, Razorpay) and subscription management.
+   - Custom RAG pipelines and vector database integrations for private knowledge bases.
+   - Complete project builds starting from ₹18,000 – ₹89,000+ / $220 – $1,100+.
+3. **Monthly Maintenance & System Support**:
+   - 24/7 uptime monitoring, error logs review, security updates, and dedicated developer hours starting at ₹1,500 – ₹12,000 / month ($20 – $150 / mo).
+
+## Core Operating Policies
+- Client retains 100% IP rights upon full payment.
+- External infrastructure costs (hosting, API keys) are held on client-owned accounts.
+- Transparent milestone schedule (50% upfront, 50% on live demo/handover).

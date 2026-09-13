@@ -6,6 +6,7 @@ import About from './components/About';
 import Products from './components/Products';
 import Stats from './components/Stats';
 import Features from './components/Features';
+import Pricing from './components/Pricing';
 import Team from './components/Team';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
@@ -46,6 +47,7 @@ function App() {
           <Products />
           <Stats />
           <Features />
+          <Pricing />
           <Team />
           <FAQ />
           <Contact />
