@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, CheckCircle2, Copy, Check } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Copy, Check, ShieldCheck } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '../hooks/useToast';
 import { triggerHaptic } from '../utils/haptics';
@@ -81,14 +81,14 @@ export default function Contact() {
                       </div>
                       <div className="truncate">
                         <p className="text-[#94A3B8] text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-0.5">Email</p>
-                        <a href="mailto:cipherfluxlabs@gmail.com" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
-                          cipherfluxlabs@gmail.com
+                        <a href="mailto:cipherfluxlabshelp@gmail.com" className="text-xs sm:text-sm text-white hover:text-[#2563EB] transition-colors font-medium truncate block">
+                          cipherfluxlabshelp@gmail.com
                         </a>
                       </div>
                     </div>
                     <button
                       type="button"
-                      onClick={() => handleCopy('cipherfluxlabs@gmail.com', 'Email address')}
+                      onClick={() => handleCopy('cipherfluxlabshelp@gmail.com', 'Email address')}
                       className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/[0.06] transition-colors shrink-0 min-w-[36px] min-h-[36px] flex items-center justify-center active:scale-95"
                       aria-label="Copy email address"
                     >
@@ -128,6 +128,29 @@ export default function Contact() {
                       <p className="text-[#94A3B8] text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-0.5">Headquarters</p>
                       <p className="text-xs sm:text-sm text-white font-medium">India • Serving Globally</p>
                     </div>
+                  </div>
+
+                  {/* MSME Registration */}
+                  <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
+                    <div className="flex items-center gap-3 overflow-hidden">
+                      <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-white/[0.04] border border-white/[0.08] flex items-center justify-center text-[#2563EB] shrink-0">
+                        <ShieldCheck size={15} aria-hidden="true" />
+                      </div>
+                      <div className="truncate">
+                        <p className="text-[#94A3B8] text-[10px] sm:text-xs font-medium uppercase tracking-wider mb-0.5">Govt. Registered MSME</p>
+                        <span className="text-xs sm:text-sm text-white font-mono font-medium truncate block">
+                          UDYAM-AP-23-0097618
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleCopy('UDYAM-AP-23-0097618', 'MSME Registration number')}
+                      className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-white/[0.06] transition-colors shrink-0 min-w-[36px] min-h-[36px] flex items-center justify-center active:scale-95"
+                      aria-label="Copy MSME registration number"
+                    >
+                      {copiedField === 'MSME Registration number' ? <Check size={14} className="text-emerald-400" /> : <Copy size={14} />}
+                    </button>
                   </div>
                 </div>
               </div>

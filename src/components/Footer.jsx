@@ -89,13 +89,18 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Bottom copyright */}
-        <div className="pt-6 sm:pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row justify-between items-center gap-2.5 text-center sm:text-left">
+        {/* Bottom copyright & MSME badge */}
+        <div className="pt-6 sm:pt-8 border-t border-white/[0.06] flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-3 gap-y-1 text-[11px] sm:text-xs text-[#94A3B8]/70 font-normal">
+            <span>© 2026 CipherFlux Labs. All rights reserved.</span>
+            <span className="hidden sm:inline text-white/20">•</span>
+            <span className="inline-flex items-center gap-1.5 text-[#94A3B8] bg-white/[0.03] border border-white/[0.06] px-2 py-0.5 rounded-md font-mono text-[10px] sm:text-[11px]">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              MSME: UDYAM-AP-23-0097618
+            </span>
+          </div>
           <p className="text-[11px] sm:text-xs text-[#94A3B8]/70 font-normal">
-            © 2026 CipherFlux Labs. All rights reserved.
-          </p>
-          <p className="text-[11px] sm:text-xs text-[#94A3B8]/70 font-normal">
-            Precision AI &amp; Digital Engineering
+            Govt. of India Registered MSME • Precision AI &amp; Digital Engineering
           </p>
         </div>
       </div>

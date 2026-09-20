@@ -8,15 +8,9 @@ export default function Hero() {
       className="relative min-h-[85vh] sm:min-h-[90vh] flex items-center justify-center pt-24 sm:pt-36 pb-12 sm:pb-24 overflow-hidden px-4" 
       aria-label="Hero"
     >
-      {/* Subtle ambient radial gradient — non-neon */}
+      {/* Subtle ambient focal glow */}
       <div 
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[600px] md:w-[800px] h-[250px] sm:h-[350px] md:h-[450px] bg-[#2563EB]/[0.04] rounded-full blur-[100px] sm:blur-[120px] pointer-events-none -z-10" 
-        aria-hidden="true" 
-      />
-      
-      {/* Subtle grid background mask */}
-      <div 
-        className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:3rem_3rem] sm:bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_60%,transparent_100%)] pointer-events-none -z-10" 
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[650px] md:w-[850px] h-[250px] sm:h-[350px] md:h-[450px] bg-[#2563EB]/[0.06] rounded-full blur-[100px] sm:blur-[130px] pointer-events-none -z-10" 
         aria-hidden="true" 
       />
 

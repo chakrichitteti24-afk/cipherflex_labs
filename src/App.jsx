@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BootScreen from './components/BootScreen';
+import TechBackground from './components/TechBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -40,8 +41,9 @@ function App() {
         }}
         className="bg-[#030712] min-h-screen selection:bg-[#2563EB]/25 selection:text-white overflow-x-hidden relative"
       >
+        <TechBackground />
         <Navbar />
-        <main id="main-content">
+        <main id="main-content" className="relative z-10">
           <Hero />
           <About />
           <Products />

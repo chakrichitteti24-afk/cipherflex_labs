@@ -11,7 +11,8 @@
 ### 1. Parties
 * **Service Provider:**  
   **CipherFlux Labs**  
-  Email: `contact@cipherfluxlabs.com` / `[Your Contact Email]`  
+  MSME (Udyam) Reg. No: `UDYAM-AP-23-0097618`  
+  Email: `cipherfluxlabshelp@gmail.com` / `[Your Contact Email]`  
   Website: `https://cipherfluxlabs.com`  
 
 * **Client Details:**  
