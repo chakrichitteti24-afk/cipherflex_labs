@@ -1,6 +1,6 @@
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from 'react-icons/fi';
 
-export default function Footer() {
+export default function Footer({ onOpenPrivacy, onOpenTerms }) {
   return (
     <footer className="bg-[#030712] border-t border-white/[0.08] pt-12 sm:pt-16 pb-10 sm:pb-12 relative z-10" aria-label="Site Footer">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -83,8 +83,24 @@ export default function Footer() {
                   Svanexa AI — Women's Wellness
                 </a>
               </li>
-              <li><a href="#" className="text-xs sm:text-sm text-[#94A3B8] hover:text-white transition-colors block py-0.5">Privacy Policy</a></li>
-              <li><a href="#" className="text-xs sm:text-sm text-[#94A3B8] hover:text-white transition-colors block py-0.5">Terms of Service</a></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={onOpenPrivacy}
+                  className="text-xs sm:text-sm text-[#94A3B8] hover:text-white transition-colors block py-0.5 text-left cursor-pointer"
+                >
+                  Privacy Policy
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={onOpenTerms}
+                  className="text-xs sm:text-sm text-[#94A3B8] hover:text-white transition-colors block py-0.5 text-left cursor-pointer"
+                >
+                  Terms of Service
+                </button>
+              </li>
             </ul>
           </div>
         </div>
